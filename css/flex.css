@@ -1,0 +1,12 @@
+.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.gallery img {
+    max-width: 500px;
+    max-height: 50%;
+    flex-basis: 450px;
+    flex-flow: row wrap;
+}

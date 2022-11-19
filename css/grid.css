@@ -1,0 +1,12 @@
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 15px;
+}
+
+
+.gallery img:nth-child(3n) {
+    grid-column: n / span 2;
+}
+
