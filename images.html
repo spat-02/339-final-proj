@@ -7,37 +7,89 @@
     <link rel="stylesheet" type="text/css" href="css/style1.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="js/nav.js"></script> -->
-    <title>Images</title>
+    <script src="js/sticky.js"></script>
+    <title>News & Updates</title>
   </head>
   <body>
-    <a class = "skip" href="#skip">Jump to Content</a>
     <header>
-      <img src="images/logo.png" alt="" id = "logo">
-      <nav>
+      <img id="image13" src="images/gmen_header.jpeg" alt="GMen Header" />
+      <nav id = "navbar">
+        <a class = "skip" href="#skip">Jump to Content</a>
         <ul class="nav_links">
-            <li id = "index" class="nav_item"><a href="index.html">Index</a></li>
-            <li id = "active" class="nav_item"><a href="images.html">Images</a></li>
-            <li id = "images2" class="nav_item"><a href="images2.html">Images2</a></li>
+            <li id = "index" class="nav_item"><a href="index.html">Home</a></li>
+            <li id = "active" class="nav_item"><a href="images.html">News & Updates</a></li>
+            <li id = "images2" class="nav_item"><a href="images2.html">History</a></li>
         </ul>
     </nav>
   </header>
-  <main class="about" id="skip">
-    <h1>Images</h1>
+  <main class="about">
+    <img id="header" src="images/gmen_header.jpeg" alt="GMen Header" />
 
-      <h2 id = "gallery">Gallery</h2>
-        <div class="gallery"> 
-            <img id="image11" src="images/blue_bkrd.jpeg" alt="dark background" />
-            <img id="image12" src="images/ball.png" alt="basketball" />
-            <img id="image13" src="images/nba_logo.png" alt="NBA Logo" />
-            <img id="image14" src="images/nbadraftlogo.webp" alt="NBA Draft Logo" />
-            <img id="image15" src="images/dunk.png" alt="slam dunk" />
-            <img id="image16" src="images/height.jpeg" alt="height comparison" />
-            <img id="image17" src="images/muggsy.jpeg" alt="tallest vs shortest" />
-            <img id="image18" src="images/measurables.jpeg" alt="measurables" />
-            <img id="image19" src="images/2021-nba-draft-group-shot.webp" alt="2021 Draft Groupshot" />
-            <img id="image20" src="images/zion.jpeg" alt="Zion Williamson & Adam Silver" />
+      <div class="content" id="skip">
+
+        <div class="gallery">
+          <h1 id = "gallery">Latest News</h1>
+          <div id = "pic1"> 
+            <a href="https://www.bigblueview.com/2022/12/2/23490276/giants-commanders-final-injury-report-9-giants-listed-as-questionable-chase-young-darius-slayton">Giants-Commanders final injury report: 9 Giants listed as questionable (Big Blue View)</a>
+            <img id="image11" src="images/injury_report.png" alt="Giants Injured Helmet" />
+            <h3 class = "date">December 2, 2022</h3>
+          </div>
+
+          <div id = "2">
+            <a href="https://www.northjersey.com/story/sports/nfl/giants/2022/12/02/ny-giants-washington-commanders-chase-young-andrew-thomas-nfc-east-playoffs/69688188007/">Did NY Giants actually win 'The Chase Young Bowl' twice with what they ended up getting? (northjersey.com)</a>
+            <img id="image12" src="images/chase-young.webp" alt="Chase Young" />
+            <h3 class = "date">December 2, 2022</h3>
+          </div>
+
+          <div id = "3">
+            <a href="https://www.nfl.com/news/odell-beckham-jr-has-good-visit-with-brian-daboll-giants-bills-cowboys-next">Odell Beckham Jr. has 'good visit' with Brian Daboll, Giants; Bills, Cowboys next (NFL)</a>
+            <img id="image13" src="images/obj-3-.jpeg" alt="Odell Beckham Jr. jersey swapped /">
+            <h3 class = "date">December 2, 2022</h3>
+          </div>
+
+          <div id = "4">
+            <a href="https://www.si.com/nfl/giants/big-blue-plus/what-could-a-giants-contract-for-odell-beckham-jr-look-like">What Could a Giants' Contract for Odell Beckham Jr Look Like? (Sports Illustrated)</a>
+            <img id="image14" src="images/obj-signing.jpeg" alt="Odell Beckham Jr. signing with the NY Giants" />
+            <h3 class = "date">December 1, 2022</h3>
+          </div>
+
+          <div id = "5">
+            <a href="https://nypost.com/2022/12/01/giants-defensive-line-ready-for-battle-with-commanders/">Giants’ offensive line in for trench battle with Commanders’ front four (New York Post)</a>
+            <img id="image15" src="images/wsh_nyg.png" alt="Washington Commanders vs NY Giants" />
+            <h3 class = "date">December 1, 2022</h3>
+          </div>
+
+          <div id = "6">
+            <a href="https://www.espn.com/nfl/story/_/id/35138116/is-nfc-east-nfl-best-division-look-playoff-hopes-eagles-cowboys-giants-commanders">Is NFC East the NFL's best division? A look at playoff hopes for Eagles, Cowboys, Giants and Commanders (ESPN)</a>
+            <img id="image16" src="images/nfc-east.jpeg" alt="NFC East Division" />
+            <h3 class = "date">November 30, 2022</h3>
+          </div>
         </div>
+
+
+        <div class="sidebar">
+          <div id = "8">
+            <h2>Featured Images</h2>
+            <img id="image17" src="images/saquon.webp" alt="Saquon Barkley pregame outfit" />
+          </div>
+          <div id = "9">
+            <img id="image18" src="images/dj-td-run.webp" alt="Daniel Jones TD run" />
+          </div>
+          <div id = "10">
+            <img id="image19" src="images/at.webp" alt="Andrew Thomas pregame outfit" />
+          </div>
+          <div id = "11">
+            <img id="image20" src="images/tunnel.webp" alt="Pregame walk from locker room tunnel" />
+          </div>
+          <div id = "12">
+            <img id="image21" src="images/defense.png" alt="Defenders group picture" />
+          </div>
+          <div id = "p13">
+            <img id="image22" src="images/tackle.webp" alt="Giants defense tackles Deejay Dallas" />
+          </div>
+        </div>
+
+      </div>
       </main>
 
     <footer>

@@ -1,12 +1,173 @@
-.gallery {
+h1 {
+    background-color: rgba(0, 0, 255, 0.8);
+    color:red;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+    padding: 10px 15px;
+    border: 2px solid red;
+    border-radius: 50px;
+}
+
+.defense {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: baseline;
 }
 
-.gallery img {
-    max-width: 500px;
+.defense img {
+    max-width: 50px;
     max-height: 50%;
+    border: solid black 10px;
     flex-basis: 450px;
     flex-flow: row wrap;
+}
+
+body {
+    background-image: url("../images/football.jpeg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.defense div, .defense img, .defense a, .offense div, .offense img, .offense a, .date {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-family: 'Copperplate';
+}
+
+.defense div, .offense div {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.date {
+    text-align: center;
+}
+
+.defense a, .offense a {
+    font-size: 25px;
+    color: gold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.defense a:focus, .offense a:focus {
+    text-decoration: dotted underline;
+}
+
+.defense a:hover, .offense a:hover {
+    transition: color 0.15s ease-in 100ms;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: underline;
+}
+
+.defense img, .offense img {
+    margin-top: 15px;
+    border: solid gold 1px;
+    max-width: none;
+}
+
+.defense h3, .offense h3 {
+    color: gold;
+}
+
+.divider {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 0px;
+    margin: 50px 0px;
+    border: solid 5px green;
+    width: 99.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider h2 {
+    color: green;
+    width: fit-content;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: auto;
+}
+
+.defense, .offense {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.defense div, .offense div {
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.legacy {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .defense div, .offense div {
+        max-width: 30%;
+        height: max-content;
+    }
+    
+    .defense, .offense {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .defense div, .offense div {
+        max-width: 15%;
+        height: max-content;
+    }
+
+    #LT, #eli {
+        border: solid black 5px;
+        background-color: rgba(255, 217, 0, 0.8);
+    }
+
+    #LT a, #LT h3, #eli a, #eli h3 {
+        color: black;
+        font-weight: bold;
+    }
+
+    #LT img, #eli img {
+        border: black solid 3px;
+    }
+
+    .legacy {
+        display: block;
+    }
+    
+    .legacy p {
+        font-family: 'Georgia', 'Times New Roman', Times, serif;
+        color: black;
+        border: solid black 3px;
+        border-radius: 50px;
+        background-color: rgba(255, 217, 0, 0.9);
+        font-weight: bold;
+        width: fit-content;
+        max-width: 75%;
+        margin: 0px 10%;
+        padding: 25px;
+        margin:auto;
+        font-size: large;
+    }
+
+    .legacy p:nth-child(2) {
+        font-family: 'Courier New', 'Lucida Console';
+        margin-top: 10px;
+        font-size: larger;
+        font-weight: bolder;
+    }
 }

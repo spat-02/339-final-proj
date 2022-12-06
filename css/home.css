@@ -1,0 +1,51 @@
+.intro, .history, .news {
+    background-color: rgba(255, 255, 255, 0.99);
+    border: 10px solid red;
+    border-radius: 15px;
+    width: fit-content;
+    max-width: 95%;
+    margin: 100px auto;
+    box-shadow: 10px 10px 0px 0px rgba(255, 255, 255, 0.8);
+}
+
+.intro {
+    margin-top: 15px;
+    border: 10px solid blue;
+}
+
+main p {
+    color: red;
+    font-size: xx-large;
+    padding: 10px;
+    font-family: 'Papyrus',  Arial, sans-serif;
+}
+
+.intro p {
+    color: blue;
+}
+
+main p:first-child {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.intro p:nth-child(2), .intro p:nth-child(3) {
+    margin-left: 50px;
+}
+
+.intro a {
+    color: blue;
+}
+
+.intro a:hover, .intro a:focus {
+    color: red;
+}
+
+main h1 {
+    font-family: "Copperplate";
+    color: white;
+}
+
+.news, .history {
+    width: 90%;
+}
+
