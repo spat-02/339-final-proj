@@ -45,6 +45,10 @@ main h1 {
     color: white;
 }
 
+body {
+    background-color: black;
+}
+
 .news, .history {
     width: 90%;
 }
