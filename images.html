@@ -6,8 +6,8 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style1.css">
     <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link href="css/lightbox.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/sticky.js"></script>
     <title>News & Updates</title>
   </head>
   <body>
@@ -70,22 +70,22 @@
         <div class="sidebar">
           <div id = "8">
             <h2>Featured Images</h2>
-            <img id="image17" src="images/saquon.webp" alt="Saquon Barkley pregame outfit" />
+            <a href="images/saquon.webp" data-lightbox="featured" data-title="RB Saquon Barkley pregame"><img data-lightbox="image-1" id="image17" src="images/saquon.webp" alt="Saquon Barkley pregame outfit" /></a>
           </div>
           <div id = "9">
-            <img id="image18" src="images/dj-td-run.webp" alt="Daniel Jones TD run" />
+            <a href="images/dj-td-run.webp" data-lightbox="featured" data-title="QB Daniel Jones scores a rushing touchdown"><img id="image18" src="images/dj-td-run.webp" alt="Daniel Jones TD run" /></a>
           </div>
           <div id = "10">
-            <img id="image19" src="images/at.webp" alt="Andrew Thomas pregame outfit" />
+            <a href="images/at.webp" data-lightbox="featured" data-title="LT Andrew Thomas pregame"><img id="image19" src="images/at.webp" alt="Andrew Thomas pregame outfit" /></a>
           </div>
           <div id = "11">
-            <img id="image20" src="images/tunnel.webp" alt="Pregame walk from locker room tunnel" />
+            <a href="images/tunnel.webp" data-lightbox="featured" data-title="Giants coming out of locker room tunnel"><img id="image20" src="images/tunnel.webp" alt="Pregame walk from locker room tunnel" /></a>
           </div>
           <div id = "12">
-            <img id="image21" src="images/defense.png" alt="Defenders group picture" />
+            <a href="images/defense.png" data-lightbox="featured" data-title="Defense celebrates a big play"><img id="image21" src="images/defense.png" alt="Defenders group picture" /></a>
           </div>
           <div id = "p13">
-            <img id="image22" src="images/tackle.webp" alt="Giants defense tackles Deejay Dallas" />
+            <a href="images/tackle.webp" data-lightbox="featured" data-title="Group tackle on Seahawks' RB Deejay Dallas"><img id="image22" src="images/tackle.webp" alt="Giants defense tackles Deejay Dallas" /></a>
           </div>
         </div>
 
@@ -96,5 +96,7 @@
       <p>University of Michigan School of Information <br/>
         &copy; Samir Patel - Web Design 2022</p>
     </footer>
+
+    <script src="js/lightbox-plus-jquery.js"></script>
   </body>
 </html>
